@@ -1,0 +1,7 @@
+﻿@Html.ActionLink("Clear Table", "Clear")
+<br />
+
+@foreach(var p in Model) {
+    @Html.ActionLink((string)@p.Name, "Play", new { name = (string)@p.FullName })
+    <br />
+}

@@ -1,0 +1,25 @@
+﻿@model MovieBrowser.Domain.Entities.Movie
+
+<div class="table">
+    <div class="row">
+        <div class="filename">
+           @Model.Name
+        </div>
+        <div class="play">
+            @Html.ActionLink("Play Video", "Play", new { name = (string)@Model.Location })
+        </div>
+    </div>
+    <div class="row">
+        <div class="filename">
+            @Model.Location
+        </div>
+        <div class="play">
+            @Html.ActionLink("Delete from Database", "Delete", new { movieID = @Model.MovieID })
+        </div>
+    </div>
+    <div class="row">
+        @Model.Genre
+    </div>
+</div>
+
+

@@ -1,0 +1,26 @@
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.pdb
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csprojResolveAssemblyReference.cache
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll.config
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll.config
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.Domain\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<string>
+
+@Html.ActionLink("Scan for Files", "Scan", "Scan")
+
+@Html.ActionLink("Home", "List", "Movie")
+
+@foreach(var link in Model) {
+    @Html.RouteLink(link, new
+    {
+        controller = "Movie",
+        action = "List",
+        genre = link,
+        page = 1
+    },
+    new
+    {
+        @class = link == ViewBag.SelectedGenre ? "selected" : null
+    })
+}
+

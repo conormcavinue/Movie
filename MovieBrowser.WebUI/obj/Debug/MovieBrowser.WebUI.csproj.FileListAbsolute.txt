@@ -1,0 +1,115 @@
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.pdb
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Antlr3.Runtime.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Infrastructure.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Optimization.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Providers.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\WebGrease.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.pdb
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.xml
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.csprojResolveAssemblyReference.cache
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.dll
+c:\users\cmcavinue\documents\visual studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Providers.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\WebGrease.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.pdb
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Providers.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\WebGrease.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.Domain.pdb
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Ninject.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Razor.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.dll
+C:\Users\Conor\Documents\Old laptop\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.pdb
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.dll
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Net.Http.Formatting.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.xml
+C:\Users\Conor\Documents\Visual Studio 2012\Projects\MovieBrowser\MovieBrowser.WebUI\bin\System.Web.Http.WebHost.xml
