@@ -150,3 +150,30 @@ DIV#genres A.selected:hover {
     background-color: #666; 
 }
 
+.btn a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.model-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu {
+    width: 100%;
+}
+
+a .btn {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+#genres .btn {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+DIV.Message { 
+    background: gray; color:White; padding: .2em;
+}

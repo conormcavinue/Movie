@@ -21,9 +21,11 @@ namespace MovieBrowser.WebUI.Controllers
             this.repository = movieRepo;
         }
 
-        public void Play(string name)
+        public ActionResult Play(string name)
         {
             Process.Start(name);
+            return Redirect(Url.Action("List", "Movie"));
+
         }
 
         public ViewResult List(string genre,int page=1)
@@ -50,9 +52,11 @@ namespace MovieBrowser.WebUI.Controllers
         
         }
 
-        public void Delete(int movieID)
+        public ActionResult Delete(int movieID)
         {
             Movie deletedMovie = repository.DeleteEntry(movieID);
+            TempData["message"] = string.Format("{0} has been removed from the database", deletedMovie.Name);
+            return Redirect(Url.Action("List", "Movie"));
         }
 
     }

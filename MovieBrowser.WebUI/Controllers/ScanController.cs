@@ -15,6 +15,8 @@ namespace MovieBrowser.WebUI.Controllers
     {
         static IMovieRepository repository;
 
+        static int changeCount = 0;
+
         static DirectoryInfo MovieDir = null;
         static List<FileInfo> files = new List<FileInfo>();
         static DirectoryInfo MainDir = new DirectoryInfo("C:/Users/Conor/Downloads/Downloaded Torrents");
@@ -24,15 +26,16 @@ namespace MovieBrowser.WebUI.Controllers
             repository = repo;
         }
 
-        public ViewResult Scan()
+        public ActionResult Scan()
         {
             List<String> extensions = new List<String>();
             extensions.Add(".mkv");
             extensions.Add(".mp4");
-            ScanDirs(MainDir.FullName, extensions);
-            
+            int count = ScanDirs(MainDir.FullName, extensions);
+            TempData["message"] = string.Format("Scan completed. {0} item"+((count == 1) ? "" : "s")+" added to database", count);
+            changeCount = 0;
 
-            return View(files);
+            return Redirect(Url.Action("List", "Movie"));
         }
 
         public void Play(string name)
@@ -40,13 +43,15 @@ namespace MovieBrowser.WebUI.Controllers
             Process.Start(name);
         }
 
-        public void Clear() 
+        public ActionResult Clear() 
         {
             repository.ClearTable();
+            return Redirect(Url.Action("List", "Movie"));
         }
 
-        private static void ScanDirs(string path, List<String> exts)
+        private static int ScanDirs(string path, List<String> exts)
         {
+
             try
             {
                 string FilePath = path;
@@ -74,6 +79,7 @@ namespace MovieBrowser.WebUI.Controllers
                             m.Name = f.Name;
                             if (!repository.Movies.Any(o => o.Name == m.Name)) {   
                                 repository.AddEntry(m);
+                                changeCount++;
                             }
                         }
                     }
@@ -99,7 +105,7 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 ScanDirs(dir, exts);
             }
-
+            return changeCount;
         }
 
     }

@@ -1,20 +1,29 @@
 ﻿@model IEnumerable<string>
 
-@Html.ActionLink("Scan for Files", "Scan", "Scan")
+@Html.ActionLink("Home", "List", "Movie", null, new { @class = "btn btn-primary" })
 
-@Html.ActionLink("Home", "List", "Movie")
-
-@foreach(var link in Model) {
-    @Html.RouteLink(link, new
-    {
-        controller = "Movie",
-        action = "List",
-        genre = link,
-        page = 1
-    },
-    new
-    {
-        @class = link == ViewBag.SelectedGenre ? "selected" : null
-    })
+@if (Model.Any())
+{
+    <div class="btn-group-vertical menu">
+        @foreach (var link in Model)
+        {
+            @Html.RouteLink(link, new
+       {
+           controller = "Movie",
+           action = "List",
+           genre = link,
+           page = 1
+       },
+                 new
+                 {
+                     @class = link == ViewBag.SelectedGenre ? "selected btn btn-primary nav-button" : "btn btn-primary nav-button"
+                 })
+        }
+    </div>
 }
 
+@Html.ActionLink("Scan for Files", "Scan", "Scan", null, new { @class = "btn btn-primary" })
+@if (Model.Any())
+{
+    @Html.ActionLink("Clear Database", "Clear", "Scan", null, new { @class = "btn btn-primary" })
+}
