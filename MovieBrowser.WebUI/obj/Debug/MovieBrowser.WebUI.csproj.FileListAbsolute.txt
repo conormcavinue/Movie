@@ -149,12 +149,14 @@ C:\Users\cmcavinue\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrows
 C:\Users\cmcavinue\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\obj\Debug\MovieBrowser.WebUI.pdb
 C:\Users\cmcavinue\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MySql.Data.dll
 C:\Users\cmcavinue\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MySql.Data.Entity.EF6.dll
+C:\Users\cmcavinue\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MediaToolkit.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.dll.config
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MovieBrowser.WebUI.pdb
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Antlr3.Runtime.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\MediaToolkit.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser\MovieBrowser.WebUI\bin\Moq.dll

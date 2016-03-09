@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.Domain.Entities;
+using MediaToolkit.Model;
+using MediaToolkit;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -56,12 +58,15 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 string FilePath = path;
                 MovieDir = new DirectoryInfo(FilePath);
+                
                 FileInfo[] tempFiles = MovieDir.GetFiles();
                 foreach (FileInfo f in tempFiles)
                 {
+                    
+
                     foreach (String s in exts)
                     {
-                        if (f.FullName.EndsWith(s) && !f.Name.Contains("sample") && !f.Name.Contains("Sample"))
+                        if (f.FullName.EndsWith(s) && !f.Name.ToLower().Contains("sample"))
                         {
                             files.Add(f);
                             Movie m = new Movie();
@@ -69,14 +74,19 @@ namespace MovieBrowser.WebUI.Controllers
 
                             if (!temp.Equals(null))
                             {
-                                while (temp.Parent.ToString() != MainDir.Name.ToString())
+                                if (temp.Name.ToString() != MainDir.Name.ToString())
                                 {
-                                    temp = temp.Parent;
+                                    while (temp.Parent.ToString() != MainDir.Name.ToString())
+                                    {
+                                        temp = temp.Parent;
+                                    }
                                 }
                             }
-                            m.Genre = temp.Name.ToString();
+                            m.Genre = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
                             m.Location = f.FullName;
                             m.Name = f.Name;
+                            //m.Name = m.Name.Replace(s, "");
+                            m.Name = m.Name.Replace(".", " ");
                             if (!repository.Movies.Any(o => o.Name == m.Name)) {   
                                 repository.AddEntry(m);
                                 changeCount++;

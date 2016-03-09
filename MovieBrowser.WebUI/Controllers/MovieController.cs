@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using MovieBrowser.Domain.Entities;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.WebUI.Models;
+using MediaToolkit;
+using MediaToolkit.Model;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -21,11 +23,33 @@ namespace MovieBrowser.WebUI.Controllers
             this.repository = movieRepo;
         }
 
-        public ActionResult Play(string name)
+        public ViewResult Play(string name)
         {
-            Process.Start(name);
-            return Redirect(Url.Action("List", "Movie"));
+            //Process.Start(name);
+            //return Redirect(Url.Action("List", "Movie"));
+            return View("Play");
 
+        }
+
+        public ActionResult Convert(string name)
+        {
+            var inputFile = new MediaFile { Filename = name };
+            string output;
+            if (name.Substring(name.Length - 4) == ".mkv")
+            {
+                output = (name.Substring(0, name.Length - 4) + ".mp4");
+
+            }
+            else
+            {
+                output = (name.Substring(0, name.Length - 4) + ".mkv");
+            }
+            var outputFile = new MediaFile { Filename = output };
+            using (var engine = new Engine())
+            {
+                engine.Convert(inputFile, outputFile);
+            }
+            return Redirect(Url.Action("List", "Movie"));
         }
 
         public ViewResult List(string genre,int page=1)

@@ -1,0 +1,23 @@
+﻿@model MovieBrowser.WebUI.Models.MoviesListViewModel
+@using MovieBrowser.WebUI.HtmlHelpers
+
+@{
+    ViewBag.Title = "Movie List";
+}
+
+<table class="table table-striped">
+    <tbody>
+    @foreach (var p in Model.Movies) {
+        <tr>
+            @{
+                Html.RenderPartial("MovieSummary", p);
+             }
+        </tr>
+    }
+    </tbody>
+</table>
+<br />
+<div class="pager">
+
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {page = x, genre = @Model.CurrentGenre}))
+</div>

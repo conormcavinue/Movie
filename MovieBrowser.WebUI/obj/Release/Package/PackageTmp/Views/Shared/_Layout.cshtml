@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @if (TempData["message"] != null)
+    {
+        <div class="Message">@TempData["message"]</div>
+    }
+   <div id="header">
+       <div class="title">MOVIE BROWSER</div>
+   </div>
+    <div id="genres">
+        @{ Html.RenderAction("Menu", "Nav"); }
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
+</body>
+</html>
