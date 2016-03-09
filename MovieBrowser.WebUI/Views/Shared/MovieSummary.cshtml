@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-2">
         <div class="btn-group-vertical">
-            <div class="btn btn-format btn-primary">@Html.ActionLink("Play Video", "Play", new { name = (string)@Model.Location }, new { @class = "btn-text" })</div>
+            <div class="btn btn-format btn-primary">@Html.ActionLink("Play Video", "Play", new { location = @Model.Location }, new { @class = "btn-text" })</div>
             <div class="btn btn-format btn-warning btn-convert">@Html.ActionLink("Convert Video", "Convert", new { name = (string)@Model.Location })</div>
             <div class="btn btn-format btn-warning btn-delete">@Html.ActionLink("Delete from Database", "Delete", new { movieID = @Model.MovieID })</div>          
         </div>

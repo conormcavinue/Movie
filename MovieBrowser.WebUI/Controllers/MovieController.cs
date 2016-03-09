@@ -23,11 +23,15 @@ namespace MovieBrowser.WebUI.Controllers
             this.repository = movieRepo;
         }
 
-        public ViewResult Play(string name)
+        public ActionResult Play(string location)
         {
+            MovieViewModel viewModel = new MovieViewModel
+            {
+                Location = location
+            };
             //Process.Start(name);
             //return Redirect(Url.Action("List", "Movie"));
-            return View("Play");
+            return View(viewModel);
 
         }
 

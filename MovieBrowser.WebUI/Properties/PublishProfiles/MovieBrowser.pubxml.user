@@ -40,7 +40,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/07/2016 15:44:23</publishTime>
     </File>
     <File Include="bin/MovieBrowser.WebUI.dll">
-      <publishTime>03/08/2016 23:58:47</publishTime>
+      <publishTime>03/09/2016 21:14:01</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
       <publishTime>03/01/2016 10:31:10</publishTime>
@@ -352,7 +352,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/29/2016 14:03:44</publishTime>
     </File>
     <File Include="Views/Movie/Play.cshtml">
-      <publishTime>03/08/2016 23:49:41</publishTime>
+      <publishTime>03/09/2016 21:04:39</publishTime>
     </File>
     <File Include="Views/Nav/Menu.cshtml">
       <publishTime>03/08/2016 12:00:15</publishTime>
@@ -361,7 +361,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/04/2014 15:07:24</publishTime>
     </File>
     <File Include="Views/Shared/MovieSummary.cshtml">
-      <publishTime>03/08/2016 23:33:25</publishTime>
+      <publishTime>03/09/2016 21:01:14</publishTime>
     </File>
     <File Include="Views/Shared/Scan.cshtml">
       <publishTime>02/29/2016 16:46:40</publishTime>
@@ -376,7 +376,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/04/2014 15:07:24</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/08/2016 22:31:26</publishTime>
+      <publishTime>03/09/2016 20:39:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

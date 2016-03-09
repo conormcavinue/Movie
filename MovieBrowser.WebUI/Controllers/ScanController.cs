@@ -83,7 +83,9 @@ namespace MovieBrowser.WebUI.Controllers
                                 }
                             }
                             m.Genre = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
-                            m.Location = f.FullName;
+                            string fileFolderPath = f.FullName.Replace("C:\\Users\\Conor\\Downloads\\Downloaded Torrents", "");
+                            fileFolderPath = fileFolderPath.Replace("\\", "/");
+                            m.Location = "http://localhost/Videos" + fileFolderPath;
                             m.Name = f.Name;
                             //m.Name = m.Name.Replace(s, "");
                             m.Name = m.Name.Replace(".", " ");
