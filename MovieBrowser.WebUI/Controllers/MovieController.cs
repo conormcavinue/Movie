@@ -8,6 +8,9 @@ using System.Web.Mvc;
 using MovieBrowser.Domain.Entities;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.WebUI.Models;
+using MediaToolkit;
+using MediaToolkit.Model;
+using System.Configuration;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -21,9 +24,35 @@ namespace MovieBrowser.WebUI.Controllers
             this.repository = movieRepo;
         }
 
-        public void Play(string name)
+        public ViewResult Play(string location)
         {
-            Process.Start(name);
+            MovieViewModel viewModel = new MovieViewModel
+            {
+                Location = location
+            };
+            //Process.Start(name);
+            //return Redirect(Url.Action("List", "Movie"));
+       
+
+            return View(viewModel);
+
+        }
+
+        public ActionResult Convert(string name)
+        {
+            name = name.Replace(ConfigurationManager.AppSettings["baseVirtualDir"], ConfigurationManager.AppSettings["baseFileDir"]);
+            //name = name.Replace("/", "\\");
+
+            var inputFile = new MediaFile { Filename = name };
+
+            string output = (name.Substring(0, name.LastIndexOf('.')) + ".mp4");
+
+            var outputFile = new MediaFile { Filename = output };
+            using (var engine = new Engine())
+            {
+                engine.Convert(inputFile, outputFile);
+            }
+            return Redirect(Url.Action("List", "Movie"));
         }
 
         public ViewResult List(string genre,int page=1)
@@ -50,9 +79,11 @@ namespace MovieBrowser.WebUI.Controllers
         
         }
 
-        public void Delete(int movieID)
+        public ActionResult Delete(int movieID)
         {
             Movie deletedMovie = repository.DeleteEntry(movieID);
+            TempData["message"] = string.Format("{0} has been removed from the database", deletedMovie.Name);
+            return Redirect(Url.Action("List", "Movie"));
         }
 
     }
