@@ -16,17 +16,17 @@ namespace MovieBrowser.WebUI.Controllers
             repository = repo;
         }
 
-        public PartialViewResult Menu(string genre = null)
+        public PartialViewResult Menu(string range = null)
         {
-            ViewBag.SelectedGenre = genre;
+            ViewBag.SelectedRange = range;
 
 
-            IEnumerable<string> genres = repository.Movies
-                                            .Select(x => x.Genre)
+            IEnumerable<string> ranges = repository.Movies
+                                            .Select(x => x.Range)
                                             .Distinct()
                                             .OrderBy(x => x);
 
-            return PartialView(genres);
+            return PartialView(ranges);
 
         }
     }

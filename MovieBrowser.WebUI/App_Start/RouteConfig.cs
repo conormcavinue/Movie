@@ -17,23 +17,23 @@ namespace MovieBrowser.WebUI
                 "",
                 new {
                     controller = "Movie", action = "List",
-                    genre = (string)null, page = 1
+                    range = (string)null, page = 1
                 }
             );
 
             routes.MapRoute(null,
                 "Page{page}",
-                new { controller = "Movie", action = "List", genre = (string)null },
+                new { controller = "Movie", action = "List", range = (string)null },
                 new { page = @"\d+" }
             );
 
             routes.MapRoute(null,
-                "{genre}",
+                "{range}",
                 new { controller = "Movie", action = "List", page = 1 }
             );
 
             routes.MapRoute(null,
-                "{genre}/Page{page}",
+                "{range}/Page{page}",
                 new { controller = "Movie", action = "List" },
                 new { page = @"\d+" }
             );

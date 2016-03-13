@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using MovieBrowser.Domain.Entities;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.WebUI.Models;
+using MediaToolkit;
+using MediaToolkit.Model;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -21,19 +23,43 @@ namespace MovieBrowser.WebUI.Controllers
             this.repository = movieRepo;
         }
 
-        public ActionResult Play(string name)
+        public ViewResult Play(string location)
         {
-            Process.Start(name);
-            return Redirect(Url.Action("List", "Movie"));
+            MovieViewModel viewModel = new MovieViewModel
+            {
+                Location = location
+            };
+            //Process.Start(name);
+            //return Redirect(Url.Action("List", "Movie"));
+       
+
+            return View(viewModel);
 
         }
 
-        public ViewResult List(string genre,int page=1)
+        public ActionResult Convert(string name)
+        {
+            name = name.Replace(ScanController.getBaseVirtualDir(), ScanController.getBaseFileDir());
+            //name = name.Replace("/", "\\");
+
+            var inputFile = new MediaFile { Filename = name };
+
+            string output = (name.Substring(0, name.LastIndexOf('.')) + ".mp4");
+
+            var outputFile = new MediaFile { Filename = output };
+            using (var engine = new Engine())
+            {
+                engine.Convert(inputFile, outputFile);
+            }
+            return Redirect(Url.Action("List", "Movie"));
+        }
+
+        public ViewResult List(string range,int page=1)
         {
             MoviesListViewModel viewModel = new MoviesListViewModel
             {
                 Movies = repository.Movies
-                .Where(p => genre == null || p.Genre == genre)
+                .Where(p => range == null || p.Range == range)
                 .OrderBy(p => p.MovieID)
                 .Skip((page - 1) * PageSize)
                 .Take(PageSize),
@@ -41,11 +67,11 @@ namespace MovieBrowser.WebUI.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    TotalItems = genre == null ?
+                    TotalItems = range == null ?
                             repository.Movies.Count() :
-                            repository.Movies.Where(e => e.Genre == genre).Count()
+                            repository.Movies.Where(e => e.Range == range).Count()
                 },
-                CurrentGenre = genre
+                CurrentRange = range
             };
 
             return View(viewModel);

@@ -7,6 +7,6 @@ namespace MovieBrowser.WebUI.Models
     {
         public IEnumerable<Movie> Movies { get; set; }
         public PagingInfo PagingInfo { get; set; }
-        public string CurrentGenre { get; set; }
+        public string CurrentRange { get; set; }
     }
 }
