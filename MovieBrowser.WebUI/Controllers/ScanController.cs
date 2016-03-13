@@ -57,6 +57,7 @@ namespace MovieBrowser.WebUI.Controllers
         public ActionResult Clear() 
         {
             repository.ClearTable();
+            TempData["message"] = "Database Cleared";
             return Redirect(Url.Action("List", "Movie"));
         }
 
@@ -92,8 +93,9 @@ namespace MovieBrowser.WebUI.Controllers
                                 }
                             }
                             m.Range = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
-                            m.Location = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
-                            m.Location = m.Location.Replace("/", "\\");
+                            string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
+                            m.Location = loc;
+                            m.Location = m.Location.Replace("\\","/");
                             m.Name = f.Name;
                             //m.Name = m.Name.Replace(s, "");
                             m.Name = m.Name.Replace(".", " ");

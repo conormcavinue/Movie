@@ -10,6 +10,7 @@ using MovieBrowser.Domain.Abstract;
 using MovieBrowser.WebUI.Models;
 using MediaToolkit;
 using MediaToolkit.Model;
+using System.Configuration;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -29,8 +30,6 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 Location = location
             };
-            //Process.Start(name);
-            //return Redirect(Url.Action("List", "Movie"));
        
 
             return View(viewModel);
@@ -39,8 +38,8 @@ namespace MovieBrowser.WebUI.Controllers
 
         public ActionResult Convert(string name)
         {
-            name = name.Replace(ScanController.getBaseVirtualDir(), ScanController.getBaseFileDir());
-            //name = name.Replace("/", "\\");
+            name = name.Replace(ConfigurationManager.AppSettings["baseVirtualDir"], ConfigurationManager.AppSettings["baseFileDir"]);
+            name = name.Replace("/", "\\");
 
             var inputFile = new MediaFile { Filename = name };
 
