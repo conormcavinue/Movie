@@ -8,31 +8,55 @@ using System.Web;
 using System.Web.Mvc;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.Domain.Entities;
+using MediaToolkit.Model;
+using MediaToolkit;
 
 namespace MovieBrowser.WebUI.Controllers
 {
     public class ScanController : Controller
     {
         static IMovieRepository repository;
+        static string baseFileDir = "C:/Users/cmcavinue/Downloads/Downloaded Torrents/";
+        static string baseVirtualDir = "http://localhost/videos/";
+        static int changeCount = 0;
 
         static DirectoryInfo MovieDir = null;
         static List<FileInfo> files = new List<FileInfo>();
-        static DirectoryInfo MainDir = new DirectoryInfo("C:/Users/Conor/Downloads/Downloaded Torrents");
+        static DirectoryInfo MainDir = new DirectoryInfo(baseFileDir);
+
+        private List<string> createExtList()
+        {
+            List<string> extensions = new List<string>();
+
+            extensions.Add(".mkv");
+            extensions.Add(".mp4");
+            extensions.Add(".webm");
+
+            return extensions;
+        }
 
         public ScanController(IMovieRepository repo)
         {
             repository = repo;
         }
 
-        public ViewResult Scan()
+        public static string getBaseFileDir()
         {
-            List<String> extensions = new List<String>();
-            extensions.Add(".mkv");
-            extensions.Add(".mp4");
-            ScanDirs(MainDir.FullName, extensions);
-            
+            return baseFileDir;
+        }
 
-            return View(files);
+        public static string getBaseVirtualDir()
+        {
+            return baseVirtualDir;
+        }
+
+        public ActionResult Scan()
+        {
+            int count = ScanDirs(MainDir.FullName, createExtList());
+            TempData["message"] = string.Format("Scan completed. {0} item"+((count == 1) ? "" : "s")+" added to database", count);
+            changeCount = 0;
+
+            return Redirect(Url.Action("List", "Movie"));
         }
 
         public void Play(string name)
@@ -40,23 +64,28 @@ namespace MovieBrowser.WebUI.Controllers
             Process.Start(name);
         }
 
-        public void Clear() 
+        public ActionResult Clear() 
         {
             repository.ClearTable();
+            return Redirect(Url.Action("List", "Movie"));
         }
 
-        private static void ScanDirs(string path, List<String> exts)
+        private static int ScanDirs(string path, List<String> exts)
         {
+
             try
             {
                 string FilePath = path;
                 MovieDir = new DirectoryInfo(FilePath);
+                
                 FileInfo[] tempFiles = MovieDir.GetFiles();
                 foreach (FileInfo f in tempFiles)
                 {
+                    
+
                     foreach (String s in exts)
                     {
-                        if (f.FullName.EndsWith(s) && !f.Name.Contains("sample") && !f.Name.Contains("Sample"))
+                        if (f.FullName.EndsWith(s) && !f.Name.ToLower().Contains("sample"))
                         {
                             files.Add(f);
                             Movie m = new Movie();
@@ -64,16 +93,22 @@ namespace MovieBrowser.WebUI.Controllers
 
                             if (!temp.Equals(null))
                             {
-                                while (temp.Parent.ToString() != MainDir.Name.ToString())
+                                if (temp.Name.ToString() != MainDir.Name.ToString())
                                 {
-                                    temp = temp.Parent;
+                                    while (temp.Parent.ToString() != MainDir.Name.ToString())
+                                    {
+                                        temp = temp.Parent;
+                                    }
                                 }
                             }
-                            m.Genre = temp.Name.ToString();
-                            m.Location = f.FullName;
+                            m.Genre = (temp.Name.ToString() == "Film") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
+                            m.Location = baseVirtualDir + m.Genre + "/" + f.Name;
                             m.Name = f.Name;
-                            if (!repository.Movies.Any(o => o.Name == m.Name)) {   
+                            //m.Name = m.Name.Replace(s, "");
+                            m.Name = m.Name.Replace(".", " ");
+                            if (!repository.Movies.Any(o => o.Location == m.Location)) {   
                                 repository.AddEntry(m);
+                                changeCount++;
                             }
                         }
                     }
@@ -99,7 +134,7 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 ScanDirs(dir, exts);
             }
-
+            return changeCount;
         }
 
     }

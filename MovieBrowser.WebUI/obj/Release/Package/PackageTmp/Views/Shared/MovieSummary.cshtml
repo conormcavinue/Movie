@@ -1,0 +1,16 @@
+﻿@model MovieBrowser.Domain.Entities.Movie
+<td>  
+    <div class="col-md-6">
+        <div class="model-font">@Model.Name</div>
+    </div>
+    <div class="col-md-2">
+        <div class="btn-group-vertical">
+            <div class="btn btn-format btn-primary">@Html.ActionLink("Play Video", "Play", new { location = @Model.Location }, new { @class = "btn-text" })</div>
+            <div class="btn btn-format btn-warning btn-convert">@Html.ActionLink("Convert Video", "Convert", new { name = (string)@Model.Location })</div>
+            <div class="btn btn-format btn-warning btn-delete">@Html.ActionLink("Delete from Database", "Delete", new { movieID = @Model.MovieID })</div>          
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</td>
+
+
