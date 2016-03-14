@@ -106,8 +106,8 @@ namespace MovieBrowser.WebUI.Controllers
                             {
                                 m.Range = @"£$%...";
                             }
-                            string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
-                            m.Location = loc;
+
+                            m.Location = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
                             m.Location = m.Location.Replace("\\","/");
                             m.Name = f.Name;
                             m.Name = m.Name.Replace(s, "");

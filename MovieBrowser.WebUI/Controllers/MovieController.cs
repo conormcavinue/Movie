@@ -63,7 +63,7 @@ namespace MovieBrowser.WebUI.Controllers
 
         public void DeleteAfterConvert(string name)
         {
-            if(System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4"))
+            if(System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4") && !name.EndsWith("mp4"))
             {
                 System.IO.File.Delete(name);
             }

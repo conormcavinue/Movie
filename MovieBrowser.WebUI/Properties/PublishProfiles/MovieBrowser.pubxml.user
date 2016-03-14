@@ -40,10 +40,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/14/2016 10:45:42</publishTime>
     </File>
     <File Include="bin/MovieBrowser.WebUI.dll">
-      <publishTime>03/14/2016 15:10:36</publishTime>
+      <publishTime>03/14/2016 15:57:32</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
-      <publishTime>01/03/2016 10:31:10</publishTime>
+      <publishTime>03/01/2016 10:31:10</publishTime>
     </File>
     <File Include="bin/MySql.Data.Entity.EF6.dll">
       <publishTime>03/14/2016 09:54:10</publishTime>
