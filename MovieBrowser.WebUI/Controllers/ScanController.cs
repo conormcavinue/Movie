@@ -92,18 +92,7 @@ namespace MovieBrowser.WebUI.Controllers
                         {
                             files.Add(f);
                             Movie m = new Movie();
-                            DirectoryInfo temp = new DirectoryInfo(f.Directory.FullName);
-
-                            if (!temp.Equals(null))
-                            {
-                                if (temp.Name.ToString() != MainDir.Name.ToString())
-                                {
-                                    while (temp.Parent.ToString() != MainDir.Name.ToString())
-                                    {
-                                        temp = temp.Parent;
-                                    }
-                                }
-                            }
+                            
                             string firstLetter = f.Name.Substring(0, 1);
                             foreach (var interval in LetterRanges)
                             {
@@ -111,7 +100,6 @@ namespace MovieBrowser.WebUI.Controllers
                                     m.Range = interval;
                                 }
                             }
-                            //m.Range = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
                             string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
                             m.Location = loc;
                             m.Location = m.Location.Replace("\\","/");
