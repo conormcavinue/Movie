@@ -50,7 +50,17 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 engine.Convert(inputFile, outputFile);
             }
-            return Redirect(Url.Action("List", "Movie"));
+            Delete(name);
+
+            return Redirect(Url.Action("Scan", "Scan"));
+        }
+
+        public void Delete(string name)
+        {
+            if(System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4"))
+            {
+                System.IO.File.Delete(name);
+            }
         }
 
         public ViewResult List(string range,int page=1)

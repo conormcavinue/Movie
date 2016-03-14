@@ -97,7 +97,7 @@ namespace MovieBrowser.WebUI.Controllers
                             m.Location = loc;
                             m.Location = m.Location.Replace("\\","/");
                             m.Name = f.Name;
-                            //m.Name = m.Name.Replace(s, "");
+                            m.Name = m.Name.Replace(s, "");
                             m.Name = m.Name.Replace(".", " ");
                             if (!repository.Movies.Any(o => o.Location == m.Location)) {   
                                 repository.AddEntry(m);
