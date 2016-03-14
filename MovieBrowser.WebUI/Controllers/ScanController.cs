@@ -47,6 +47,7 @@ namespace MovieBrowser.WebUI.Controllers
             Ranges.Add("Q-S");
             Ranges.Add("T-V");
             Ranges.Add("W-Z");
+            Ranges.Add("0-9");
 
             return Ranges;
         }
@@ -98,7 +99,12 @@ namespace MovieBrowser.WebUI.Controllers
                             {
                                 if (Regex.IsMatch(firstLetter, @"(?i)[" + interval + "]")) {
                                     m.Range = interval;
+                                    break;
                                 }
+                            }
+                            if(m.Range == null)
+                            {
+                                m.Range = @"£$%...";
                             }
                             string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
                             m.Location = loc;
