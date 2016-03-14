@@ -11,6 +11,7 @@ using MovieBrowser.Domain.Entities;
 using MediaToolkit.Model;
 using MediaToolkit;
 using System.Configuration;
+using System.Text.RegularExpressions;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -22,6 +23,7 @@ namespace MovieBrowser.WebUI.Controllers
         static DirectoryInfo MovieDir = null;
         static List<FileInfo> files = new List<FileInfo>();
         static DirectoryInfo MainDir = new DirectoryInfo(ConfigurationManager.AppSettings["baseFileDir"]);
+        static List<string> LetterRanges = setRanges();
 
         private List<string> createExtList()
         {
@@ -32,6 +34,21 @@ namespace MovieBrowser.WebUI.Controllers
             extensions.Add(".webm");
 
             return extensions;
+        }
+
+        static List<string> setRanges()
+        {
+            List<string> Ranges = new List<string>();
+
+            Ranges.Add("A-D");
+            Ranges.Add("E-H");
+            Ranges.Add("I-L");
+            Ranges.Add("M-P");
+            Ranges.Add("Q-S");
+            Ranges.Add("T-V");
+            Ranges.Add("W-Z");
+
+            return Ranges;
         }
 
         public ScanController(IMovieRepository repo)
@@ -87,7 +104,14 @@ namespace MovieBrowser.WebUI.Controllers
                                     }
                                 }
                             }
-                            m.Range = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
+                            string firstLetter = f.Name.Substring(0, 1);
+                            foreach (var interval in LetterRanges)
+                            {
+                                if (Regex.IsMatch(firstLetter, @"(?i)[" + interval + "]")) {
+                                    m.Range = interval;
+                                }
+                            }
+                            //m.Range = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
                             string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
                             m.Location = loc;
                             m.Location = m.Location.Replace("\\","/");
