@@ -49,11 +49,6 @@ namespace MovieBrowser.WebUI.Controllers
             return Redirect(Url.Action("List", "Movie"));
         }
 
-        public void Play(string name)
-        {
-            Process.Start(name);
-        }
-
         public ActionResult Clear() 
         {
             repository.ClearTable();

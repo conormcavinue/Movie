@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using MovieBrowser.Domain.Entities;
 using MovieBrowser.Domain.Abstract;
+using MovieBrowser.Domain.Concrete;
 using MovieBrowser.WebUI.Models;
 using MediaToolkit;
 using MediaToolkit.Model;
@@ -38,6 +39,9 @@ namespace MovieBrowser.WebUI.Controllers
 
         public ActionResult Convert(string name)
         {
+            EFDbContext context = new EFDbContext();
+            int movieID = context.Movies.Where(u => u.Location == name).Select(u => u.MovieID).FirstOrDefault();
+
             name = name.Replace(ConfigurationManager.AppSettings["baseVirtualDir"], ConfigurationManager.AppSettings["baseFileDir"]);
             name = name.Replace("/", "\\");
 
@@ -50,12 +54,14 @@ namespace MovieBrowser.WebUI.Controllers
             {
                 engine.Convert(inputFile, outputFile);
             }
-            Delete(name);
+
+            DeleteFromDB(movieID);
+            DeleteAfterConvert(name);
 
             return Redirect(Url.Action("Scan", "Scan"));
         }
 
-        public void Delete(string name)
+        public void DeleteAfterConvert(string name)
         {
             if(System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4"))
             {
@@ -87,7 +93,7 @@ namespace MovieBrowser.WebUI.Controllers
         
         }
 
-        public ActionResult Delete(int movieID)
+        public ActionResult DeleteFromDB(int movieID)
         {
             Movie deletedMovie = repository.DeleteEntry(movieID);
             TempData["message"] = string.Format("{0} has been removed from the database", deletedMovie.Name);
