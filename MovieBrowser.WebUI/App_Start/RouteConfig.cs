@@ -28,12 +28,12 @@ namespace MovieBrowser.WebUI
             );
 
             routes.MapRoute(null,
-                "{range}",
+                "{@range}",
                 new { controller = "Movie", action = "List", page = 1 }
             );
 
             routes.MapRoute(null,
-                "{range}/Page{page}",
+                "{@range}/Page{page}",
                 new { controller = "Movie", action = "List" },
                 new { page = @"\d+" }
             );

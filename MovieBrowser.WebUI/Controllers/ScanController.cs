@@ -11,6 +11,7 @@ using MovieBrowser.Domain.Entities;
 using MediaToolkit.Model;
 using MediaToolkit;
 using System.Configuration;
+using System.Text.RegularExpressions;
 
 namespace MovieBrowser.WebUI.Controllers
 {
@@ -22,6 +23,7 @@ namespace MovieBrowser.WebUI.Controllers
         static DirectoryInfo MovieDir = null;
         static List<FileInfo> files = new List<FileInfo>();
         static DirectoryInfo MainDir = new DirectoryInfo(ConfigurationManager.AppSettings["baseFileDir"]);
+        static List<string> LetterRanges = setRanges();
 
         private List<string> createExtList()
         {
@@ -32,6 +34,22 @@ namespace MovieBrowser.WebUI.Controllers
             extensions.Add(".webm");
 
             return extensions;
+        }
+
+        static List<string> setRanges()
+        {
+            List<string> Ranges = new List<string>();
+
+            Ranges.Add("A-D");
+            Ranges.Add("E-H");
+            Ranges.Add("I-L");
+            Ranges.Add("M-P");
+            Ranges.Add("Q-S");
+            Ranges.Add("T-V");
+            Ranges.Add("W-Z");
+            Ranges.Add("0-9");
+
+            return Ranges;
         }
 
         public ScanController(IMovieRepository repo)
@@ -75,21 +93,21 @@ namespace MovieBrowser.WebUI.Controllers
                         {
                             files.Add(f);
                             Movie m = new Movie();
-                            DirectoryInfo temp = new DirectoryInfo(f.Directory.FullName);
-
-                            if (!temp.Equals(null))
+                            
+                            string firstLetter = f.Name.Substring(0, 1);
+                            foreach (var interval in LetterRanges)
                             {
-                                if (temp.Name.ToString() != MainDir.Name.ToString())
-                                {
-                                    while (temp.Parent.ToString() != MainDir.Name.ToString())
-                                    {
-                                        temp = temp.Parent;
-                                    }
+                                if (Regex.IsMatch(firstLetter, @"(?i)[" + interval + "]")) {
+                                    m.Range = interval;
+                                    break;
                                 }
                             }
-                            m.Range = (temp.Name.ToString() == "Films") || (temp.Name.ToString() == "TV") ? temp.Name.ToString() : "Other" ;
-                            string loc = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
-                            m.Location = loc;
+                            if(m.Range == null)
+                            {
+                                m.Range = @"£$%...";
+                            }
+
+                            m.Location = f.FullName.Replace(ConfigurationManager.AppSettings["baseFileDir"], ConfigurationManager.AppSettings["baseVirtualDir"]);
                             m.Location = m.Location.Replace("\\","/");
                             m.Name = f.Name;
                             m.Name = m.Name.Replace(s, "");

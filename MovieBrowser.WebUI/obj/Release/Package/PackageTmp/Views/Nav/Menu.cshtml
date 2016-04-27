@@ -7,7 +7,7 @@
     <div class="btn-group-vertical menu">
         @foreach (var link in Model)
         {
-            @Html.RouteLink(link, new
+            @Html.RouteLink(@link, new
             {
                     controller = "Movie",
                     action = "List",
