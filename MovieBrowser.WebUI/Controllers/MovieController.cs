@@ -59,7 +59,7 @@ namespace MovieBrowser.WebUI.Controllers
 
             DeleteFromDB(movieID);
             DeleteAfterConvert(name);*/
-
+            DeleteFromDB(movieID);
             convertFile(inputFile, outputFile, movieID, name);
 
             return Redirect(Url.Action("Scan", "Scan"));
@@ -70,18 +70,36 @@ namespace MovieBrowser.WebUI.Controllers
             await Task.Run(() =>
             {
                 using (var engine = new Engine())
+                {
                     engine.Convert(inputFile, outputFile);
+                }
+            
+                
+                try
+                {
+                    DeleteAfterConvert(name);
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
             });
-
-            DeleteFromDB(movieID);
-            DeleteAfterConvert(name);
         }
 
         public void DeleteAfterConvert(string name)
         {
-            if(System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4") && !name.EndsWith("mp4"))
+            System.Diagnostics.Debug.WriteLine("Deleting");
+            System.Diagnostics.Debug.WriteLine(name);
+            try
             {
-                System.IO.File.Delete(name);
+                if (System.IO.File.Exists(name.Substring(0, name.LastIndexOf('.')) + ".mp4") && !name.EndsWith("mp4"))
+                {
+                    System.IO.File.Delete(name);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
             }
         }
 

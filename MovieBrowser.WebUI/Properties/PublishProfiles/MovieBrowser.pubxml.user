@@ -46,10 +46,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2019 16:44:48</publishTime>
     </File>
     <File Include="bin/MovieBrowser.WebUI.dll">
-      <publishTime>03/23/2019 17:31:36</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/MovieBrowser.WebUI.pdb">
-      <publishTime>03/23/2019 17:31:36</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
       <publishTime>03/23/2019 15:58:42</publishTime>
