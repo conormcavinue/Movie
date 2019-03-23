@@ -25,3 +25,18 @@ C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.pdb
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\MovieBrowser.Domain.dll.config
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\MovieBrowser.Domain.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\MovieBrowser.Domain.pdb
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EntityFramework.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EnvDTE.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\stdole.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EntityFramework.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Release\EnvDTE.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.csprojAssemblyReference.cache
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.csproj.CopyComplete
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Release\MovieBrowser.Domain.pdb

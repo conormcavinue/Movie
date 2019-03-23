@@ -51,3 +51,18 @@ C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.dll
 C:\Users\Conor\Documents\Visual Studio 2015\Projects\MovieBrowser1\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.pdb
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll.config
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\MovieBrowser.Domain.pdb
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EnvDTE.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\stdole.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\bin\Debug\EnvDTE.xml
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csprojAssemblyReference.cache
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.csproj.CopyComplete
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.dll
+C:\inetpub\wwwroot\MovieBrowser\MovieBrowser.Domain\obj\Debug\MovieBrowser.Domain.pdb

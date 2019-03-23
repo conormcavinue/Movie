@@ -5,6 +5,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Threading;
+using System.Threading.Tasks;
 using MovieBrowser.Domain.Entities;
 using MovieBrowser.Domain.Abstract;
 using MovieBrowser.Domain.Concrete;
@@ -50,15 +52,29 @@ namespace MovieBrowser.WebUI.Controllers
             string output = (name.Substring(0, name.LastIndexOf('.')) + ".mp4");
 
             var outputFile = new MediaFile { Filename = output };
-            using (var engine = new Engine())
+            /*using (var engine = new Engine())
             {
                 engine.Convert(inputFile, outputFile);
             }
 
             DeleteFromDB(movieID);
-            DeleteAfterConvert(name);
+            DeleteAfterConvert(name);*/
+
+            convertFile(inputFile, outputFile, movieID, name);
 
             return Redirect(Url.Action("Scan", "Scan"));
+        }
+
+        private async Task convertFile(MediaFile inputFile, MediaFile outputFile, int movieID, string name)
+        {
+            await Task.Run(() =>
+            {
+                using (var engine = new Engine())
+                    engine.Convert(inputFile, outputFile);
+            });
+
+            DeleteFromDB(movieID);
+            DeleteAfterConvert(name);
         }
 
         public void DeleteAfterConvert(string name)
